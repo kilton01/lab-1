@@ -5,18 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Lab</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 
 <style>
-    body{
+    body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        background-color: white;
+        padding: 0px 0px 10px 0px;
+        margin: 0px 0px 10px 0px;
+        height: 40px;
+    }
+
+    header div.nav_icon {
+        float: left;
+        padding: 10px 0px 0px 0px;
+        margin: 0px;
+
+    }
+
+    header div.navy {
+        float: right;
+        margin: 0px 0px 0px 0px;
+        padding: 5px 0px 5px 0px;
+    }
+
+    header ul {
+        display: inline;
+        margin: 0px;
+        padding: 0px 5px 0px 0px;
+    }
+
+    header li {
+        list-style: none;
+        float: left;
+        display: block;
+    }
+
+    header li a:link,
+    a:visited {
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0px 3px 0px;
+    }
+
+    header li a:hover,
+    a:active {
+        background-color: turquoise;
+        color: white;
+    }
+
+    header a.icon:link,
+    a.icon.visited {
+        text-decoration: none;
+        font-family: cursive;
+        font-size: large;
+        padding: 0px 0px 0px 10px;
+        margin: 0px;
+        color: turquoise;
+        font-style: italic;
+    }
+
+    header a.icon:hover {
+        cursor: pointer;
+    }
+
+    #home {
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        height: fit-content;
+    }
+
+    section {
+        background-color: whitesmoke;
+        margin-bottom: 10px;
+        height: fit-content;
+        padding: 10px;
+
+    }
+
+    .Landing-container {
+        width: fit-content;
+        height: 200px;
+    }
+
+    .section-container {
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+    #home h1 {
+        font-size: 40px;
+        color: whitesmoke;
+        font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* text-align: center; */
+    }
+
+    footer {
+        background-color: darkslateblue;
+        padding: 30px;
+        margin-top: 30px;
     }
 </style>
 
 <body style="background-color: darkgrey; margin: 0px 20px 0px 20px; padding: 0px 250px 0px 250px;">
-    <div style="background-color: white; height: 100%;">
-        <h1 style="text-align: center; margin: 0px; color: whitesmoke; background-color: darkslateblue;">Welcome to Lab1</h1>
-        <h2 style="margin: 20px 20px 10px 20px;">Introduction</h2>
+    <!-- <body> -->
+    <header>
+        <div>
+            <div class="nav_icon">
+                <a class="icon" href="#">SKY Inc.</a>
+            </div>
+            <div class="navy">
+                <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container Landing-container ">
+            <div class="d-flex align-items-center" style="margin-top: 75px;">
+                <h1>Welcome to my World!!!</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <h2 style="margin: 0px 20px 10px 20px;">Introduction</h2>
         <p style="text-align: justify; margin: 20px 20px 10px 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Dignissimos, soluta,
             recusandae nulla amet veritatis laboriosam voluptates eaque ea, dolorum quas minus quis? Ullam aperiam quia
@@ -34,27 +167,66 @@
             Pariatur?
         </p>
 
-        <h2 style="text-align: center; background-color: cornflowerblue; padding: 5px;">My World</h2>
-        
-        <p style="margin: 20px 20px 10px 20px;"><b>Name: </b><em> Stephen Kwadwo Yiadom Owusu</em></p>
-        <p style="margin: 20px 20px 10px 20px;"><b>Course: </b><em>Web Technology</em></p>
-        <p style="margin: 20px 20px 10px 20px;"> Web development is a skill have been wanting to gain for a while now. I
-            am in this class to learn everything I need to know to become a professional in this field. I hope to
-            accomplish a lot and some of these accomplishment maybe; 
-        </p>
-        <ul style="margin: 20px 20px 10px 20px;">
-            <li>Become an expert in HTML</li>
-            <li>Become an expert in CSS styling</li>
-            <li>Become an expert in JavaScript</li>
-            <li>Get to know the various frameworks</li>
-            <li>How to interact and integrate the database using php</li>
-            <li>Above all, building a very secure system with less web application vulnerabilities</li>
+    </section>
+
+    <section id="about">
+        <div class="container section-container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img style="margin-right: 160px;" src="me.jpg" alt="" height="430px" width="360px">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>The name’s Stephen Kwadwo Yiadom Owusu. I am a computer engineering student in the Ashesi
+                        University interested in both
+                        hardware and software though I have shown more interest in software. I am open-minded, have a
+                        positive response to changes and I adapt
+                        quite fast. I am driven by curious in whatever area I find interesting. I am always ready to
+                        learn something new.</p>
+                    <p>I am a great thinker when it comes to people and empthy hence making me a good team-player and
+                        a great leader.</p>
+                    <p>I am currently enrolled in a <em>Web Technology</em> and in this class, I want to learn
+                        everything I need to know to become a professional in this field. To be able to build a website
+                        and a web application with a good and responsive front end, a well functioning backend, and few
+                        or no web vulnerabilities. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming Languages (Basics in Java, Python, HTML, CSS, MATLAB, Arduino, dart)</li>
+            <li>Basic Knowledge in mobile App development (using Java and xml in Android Studio)</li>
+            <li>Basic Knowledge in Kali Linux commands and tools (SET, Wireshark, aircrack-ng, Macchanger, Nmap)</li>
+            <li>Beginner skills in CAD.</li>
+            <li>3D modelling with Blender</li>
+            <li>Beginner skills in LabView</li>
+            <li>Beginner skills in OWASP Zap</li>
+
         </ul>
+    </section>
 
-        <footer style="background-color: darkslateblue; padding: 30px; margin-top: 30px;">
-            <p style="text-align: center; color: cornsilk;">stephen.owusu@ashesi.edu.gh</p>
-            <p style="text-align: center; color: cornsilk;"><em>learning new things is fun</em></p>
-        </footer>
+    <section id="project">
+        <h2>Projects and Research</h2>
+        <ul>
+            <li>Arduino Robotic Arm</li>
+            <p>For this project, Main components I used were servo motors, arduino Uno, potentiometers, and jumper
+                wires. The grip was 3D modelled using Solidworks. Models were imported into Ultimate Cura and 3D
+                printed. The rest of the arm was built in the workshop using aluminium and wood. A code was written and
+                uploaded onto the arduino board to bridge the electronic components connected to the board. </p>
+            <li>ATM Simulation</li>
+            <li>Wishing App</li>
+            <li>Mini Fire Alarm System</li>
+            <li>Electromagnetic Doorbell</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p style="text-align: center; color: cornsilk;"><em>learning new things is fun</em></p>
+    </footer>
     </div>
 </body>
+
 </html>
